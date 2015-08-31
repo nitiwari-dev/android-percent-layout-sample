@@ -1,6 +1,4 @@
 # android-percent-layout-sample
-
-# android-percent-layout-sample
 This demo displays how to use android support percent library with the help of different layouts as examples.It replaces our tranditional
 way of using `layout_weight` of `LinearLayout` in order to access out screen area for different widgets.
 
