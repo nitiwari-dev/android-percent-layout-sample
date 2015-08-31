@@ -20,7 +20,7 @@ Steps:
                     or
     `<android.support.percent.PercentFrameLayout>`
 
-3. Finally use `layout_heightPercent` and `layout_widthPercent` properties thats it.
+3. Finally use `layout_heightPercent` and `layout_widthPercent` properties. Thats it !!!.
 
 ```xml
 <android.support.percent.PercentRelativeLayout
