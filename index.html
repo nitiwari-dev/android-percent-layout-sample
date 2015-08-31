@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Android-percent-layout-sample by nitiwari-dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Android-percent-layout-sample</h1>
+      <h2 class="project-tagline">android percent support library demo</h2>
+      <a href="https://github.com/nitiwari-dev/android-percent-layout-sample" class="btn">View on GitHub</a>
+      <a href="https://github.com/nitiwari-dev/android-percent-layout-sample/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/nitiwari-dev/android-percent-layout-sample/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="android-percent-layout-sample" class="anchor" href="#android-percent-layout-sample" aria-hidden="true"><span class="octicon octicon-link"></span></a>android-percent-layout-sample</h1>
+
+<p>This demo displays how to use android support percent library with the help of different layouts as examples.It replaces our tranditional
+way of using <code>layout_weight</code> of <code>LinearLayout</code> in order to access out screen area for different widgets.</p>
+
+<p>Really awesome!!!</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/10304040/9567537/97e183f8-4f4c-11e5-8b34-f5f2411e67f5.png" alt="percent_init">
+<img src="https://cloud.githubusercontent.com/assets/10304040/9567536/97dcc84a-4f4c-11e5-9406-4579e7ed4411.png" alt="percent_50_50">
+<img src="https://cloud.githubusercontent.com/assets/10304040/9567539/97f413e2-4f4c-11e5-94a7-4aa59862fbac.png" alt="percent_tile2"></p>
+
+<p>Steps:</p>
+
+<ol>
+<li>
+<p>Add below into build.gradle</p>
+
+<p><code>compile 'com.android.support:percent:23.0.0'</code></p>
+</li>
+<li>
+<p>Add any one of this as parent layout.</p>
+
+<p><code>&lt;android.support.percent.PercentRelativeLayout&gt;</code>
+                or
+<code>&lt;android.support.percent.PercentFrameLayout&gt;</code></p>
+</li>
+<li><p>Finally use <code>layout_heightPercent</code> and <code>layout_widthPercent</code> properties thats it.</p></li>
+</ol>
+
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">android</span>.support.percent.PercentRelativeLayout
+    <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">android</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res/android<span class="pl-pds">"</span></span>
+    <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">app</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">TextView</span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/fifty_huntv<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">background</span>=<span class="pl-s"><span class="pl-pds">"</span>#ff7acfff<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>20% - 50%<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">textColor</span>=<span class="pl-s"><span class="pl-pds">"</span>@android:color/white<span class="pl-pds">"</span></span>
+        <span class="pl-e">app</span><span class="pl-e">:</span><span class="pl-e">layout_heightPercent</span>=<span class="pl-s"><span class="pl-pds">"</span>20%<span class="pl-pds">"</span></span>
+        <span class="pl-e">app</span><span class="pl-e">:</span><span class="pl-e">layout_widthPercent</span>=<span class="pl-s"><span class="pl-pds">"</span>50%<span class="pl-pds">"</span></span> /&gt;
+    &lt;<span class="pl-ent">TextView</span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>0dp<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_toRightOf</span>=<span class="pl-s"><span class="pl-pds">"</span>@id/fifty_huntv<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">background</span>=<span class="pl-s"><span class="pl-pds">"</span>#ffff5566<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>80%-50%<span class="pl-pds">"</span></span>
+        <span class="pl-e">app</span><span class="pl-e">:</span><span class="pl-e">layout_heightPercent</span>=<span class="pl-s"><span class="pl-pds">"</span>80%<span class="pl-pds">"</span></span>
+        <span class="pl-e">app</span><span class="pl-e">:</span><span class="pl-e">layout_widthPercent</span>=<span class="pl-s"><span class="pl-pds">"</span>50%<span class="pl-pds">"</span></span>
+        /&gt;
+
+&lt;/<span class="pl-ent">android</span>.support.percent.PercentRelativeLayout&gt;</pre></div>
+
+<p>Bingo we are done !!!</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/nitiwari-dev/android-percent-layout-sample">Android-percent-layout-sample</a> is maintained by <a href="https://github.com/nitiwari-dev">nitiwari-dev</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-60062660-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
