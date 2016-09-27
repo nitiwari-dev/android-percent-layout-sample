@@ -1,0 +1,66 @@
+<android.support.percent.PercentRelativeLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fifty_huntv"
+        android:background="#ffff8800"
+        android:text="30% - 50%"
+        android:textColor="@android:color/white"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="50%" />
+    <TextView
+        android:id="@+id/comp2_twenty_fifty_tv"
+        android:layout_toRightOf="@id/fifty_huntv"
+        android:background="#ffff5566"
+        android:text="20%-50%"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="50%"
+        />
+
+    <TextView
+        android:id="@+id/comp2_ten_fifty_tv"
+        android:layout_below="@id/comp2_twenty_fifty_tv"
+        android:layout_toRightOf="@id/fifty_huntv"
+        android:background="#aa3628cc"
+        android:text="10%-50%"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        />
+
+    <TextView
+        android:id="@+id/century_25_tv"
+        android:layout_below="@id/fifty_huntv"
+        android:background="#aacacc46"
+        android:text="25%-100%"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="50%"
+        />
+
+    <TextView
+        android:id="@+id/century_50_tv"
+        android:layout_below="@id/comp2_ten_fifty_tv"
+        android:background="#77984dcc"
+        android:text="100%-50%"
+        android:layout_toRightOf="@id/century_25_tv"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="50%"
+        />
+
+    <TextView
+        android:id="@+id/thiryt_25_tv"
+        android:layout_below="@id/century_25_tv"
+        android:background="#ffb2cc92"
+        android:text="55%-50%"
+        style="@style/STYLE_PERCENT_TV"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="50%"
+        />
+
+</android.support.percent.PercentRelativeLayout>
