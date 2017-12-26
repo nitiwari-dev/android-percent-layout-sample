@@ -1,4 +1,4 @@
-package com.code2concept.percent_layout_sample;
+package com.coderconsole.percent_layout_sample;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 
-import com.code2concept.percent_layout_sample.adapter.PercentAdapter;
-import com.code2concept.percent_layout_sample.model.PercentModel;
+import com.coderconsole.percent_layout_sample.adapter.PercentAdapter;
+import com.coderconsole.percent_layout_sample.model.PercentModel;
 
 import java.util.ArrayList;
 import java.util.List;

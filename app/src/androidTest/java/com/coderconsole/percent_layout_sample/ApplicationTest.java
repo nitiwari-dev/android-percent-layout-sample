@@ -1,4 +1,4 @@
-package com.code2concept.percent_layout_sample;
+package com.coderconsole.percent_layout_sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

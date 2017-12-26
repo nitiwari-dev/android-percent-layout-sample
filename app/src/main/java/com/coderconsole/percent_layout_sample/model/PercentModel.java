@@ -1,4 +1,4 @@
-package com.code2concept.percent_layout_sample.model;
+package com.coderconsole.percent_layout_sample.model;
 
 /**
  * Created by nitesh on 8/30/2015.

@@ -1,4 +1,4 @@
-package com.code2concept.percent_layout_sample.adapter;
+package com.coderconsole.percent_layout_sample.adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,9 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.code2concept.percent_layout_sample.R;
-import com.code2concept.percent_layout_sample.holder.PercentHolder;
-import com.code2concept.percent_layout_sample.model.PercentModel;
+import com.coderconsole.percent_layout_sample.R;
+import com.coderconsole.percent_layout_sample.holder.PercentHolder;
+import com.coderconsole.percent_layout_sample.model.PercentModel;
 
 import java.util.List;
 
