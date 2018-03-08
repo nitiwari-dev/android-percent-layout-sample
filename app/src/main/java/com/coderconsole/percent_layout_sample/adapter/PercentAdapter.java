@@ -21,10 +21,11 @@ public class PercentAdapter extends RecyclerView.Adapter<PercentHolder> {
     private final List<PercentModel> percentModelList;
     private Context context;
 
-    public PercentAdapter(Context context, List<PercentModel> percentModelList){
+    public PercentAdapter(Context context, List<PercentModel> percentModelList) {
         this.percentModelList = percentModelList;
         this.context = context;
     }
+
     @Override
     public PercentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -50,30 +51,32 @@ public class PercentAdapter extends RecyclerView.Adapter<PercentHolder> {
 
     private void showPercentDialog(int position, String percentType) {
 
-        switch (position){
+        switch (position) {
 
 
             case 0:
-                createDialogByPosition(percentType , R.layout.row_percent_20_50);
+                createDialogByPosition(percentType, R.layout.row_constraint_percent_20_50);
                 break;
 
             case 1:
-                createDialogByPosition(percentType , R.layout.row_percent_50_50);
+                createDialogByPosition(percentType, R.layout.row_constraint_percent_50_50);
                 break;
 
             case 2:
-                createDialogByPosition(percentType , R.layout.row_percent_50_100);
+                createDialogByPosition(percentType, R.layout.row_constraint_percent_50_100);
                 break;
 
             case 3:
-                createDialogByPosition(percentType , R.layout.row_percent_tile1);
+                createDialogByPosition(percentType, R.layout.row_constraint_percent_tile1);
                 break;
 
             case 4:
-                createDialogByPosition(percentType , R.layout.row_percent_tile2);
+                createDialogByPosition(percentType, R.layout.row_constraint_percent_tile2);
+                break;
+            case 5:
+                createDialogByPosition(percentType, R.layout.row_constraint_chainning_ratios);
                 break;
         }
-
 
 
     }
@@ -83,7 +86,8 @@ public class PercentAdapter extends RecyclerView.Adapter<PercentHolder> {
         final Dialog dialog = new Dialog(context);
         dialog.setContentView(resID);
         dialog.setTitle(percentType);
-        dialog.show();    }
+        dialog.show();
+    }
 
 
     @Override

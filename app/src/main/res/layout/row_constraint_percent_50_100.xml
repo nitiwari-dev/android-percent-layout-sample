@@ -1,0 +1,25 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fifty_thirty"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#ffff93e0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.5"
+        android:text="@string/fifty_hundred_text" />
+
+    <TextView
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:layout_below="@id/fifty_thirty"
+        android:background="#ffff5566"
+        android:text="@string/fifty_hundred_text"
+        app:layout_constraintTop_toBottomOf="@id/fifty_thirty"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

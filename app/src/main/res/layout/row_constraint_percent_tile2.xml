@@ -1,0 +1,63 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fifty_thirty_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#aa3628cc"
+        android:text="@string/thirty_fifty"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/fifty_twenty_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#ffff8800"
+        android:text="@string/twenty_fifty"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toRightOf="@id/fifty_thirty_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/fifty_ten_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#ffff5566"
+        android:text="@string/ten_fifty"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/fifty_thirty_tv"
+        app:layout_constraintTop_toBottomOf="@id/fifty_twenty_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/twenty_five_hundred_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#aacacc46"
+        android:text="@string/twenty_hundred_tv"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@id/fifty_thirty_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/fifty_five_hundred_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#ffb2cc92"
+        android:text="@string/fifty_five_hundred_tv"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintTop_toBottomOf="@id/twenty_five_hundred_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/fifty_seventy_tv"
+        style="@style/STYLE_CONSTRAINT_PERCENT_TV"
+        android:background="#77984dcc"
+        android:text="@string/fifty_seventy_tv"
+        app:layout_constraintHeight_percent="0.70"
+        app:layout_constraintLeft_toRightOf="@id/fifty_thirty_tv"
+        app:layout_constraintTop_toBottomOf="@id/fifty_ten_tv"
+        app:layout_constraintWidth_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

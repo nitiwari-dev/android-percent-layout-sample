@@ -3,4 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="fifty_fifty_text">50%-50%</string>
+    <string name="fifty_hundred_text">50%-100%</string>
+    <string name="twenty_fifty">20%-50%</string>
+    <string name="thirty_fifty">30%-50%</string>
+    <string name="ten_fifty">10%-50%</string>
+    <string name="twenty_hundred_tv">25%-50%</string>
+    <string name="fifty_five_hundred_tv">55%-50%</string>
+    <string name="fifty_seventy_tv">50%-70%</string>
+    <string name="chaining">Chainning</string>
+    <string name="ratios">Ratios</string>
 </resources>

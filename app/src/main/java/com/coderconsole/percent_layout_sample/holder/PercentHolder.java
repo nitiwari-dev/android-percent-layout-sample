@@ -15,7 +15,6 @@ public class PercentHolder extends RecyclerView.ViewHolder {
 
     public PercentHolder(View itemView) {
         super(itemView);
-
-        percentTv = (TextView) itemView.findViewById(R.id.percent_tv);
+        percentTv = itemView.findViewById(R.id.percent_tv);
     }
 }

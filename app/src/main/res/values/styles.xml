@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -11,5 +11,15 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="STYLE_CONSTRAINT_PERCENT_TV">
+        <item name="android:height">0dp</item>
+        <item name="android:width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="layout_constraintHeight_default">percent</item>
+        <item name="layout_constraintWidth_default">percent</item>
     </style>
 </resources>

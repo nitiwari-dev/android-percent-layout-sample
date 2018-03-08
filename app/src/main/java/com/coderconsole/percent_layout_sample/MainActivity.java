@@ -21,7 +21,8 @@ public class MainActivity extends Activity {
             "50-50",
             "50-100",
             "Tile 1",
-            "Tile 2"
+            "Tile 2",
+            "Chaining and Ratios"
     };
 
     private List<PercentModel> percentModelsList = new ArrayList<>();
@@ -35,22 +36,22 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
-        percentRecyclerView = (RecyclerView)findViewById(R.id.percentList);
+        percentRecyclerView = findViewById(R.id.percentList);
         percentRecyclerView.setHasFixedSize(true);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, OrientationHelper.VERTICAL, false);
         percentRecyclerView.setLayoutManager(linearLayoutManager);
 
         fillList();
-        PercentAdapter percentAdapter = new PercentAdapter(this,percentModelsList);
+        PercentAdapter percentAdapter = new PercentAdapter(this, percentModelsList);
         percentRecyclerView.setAdapter(percentAdapter);
 
 
     }
 
     private void fillList() {
-        for(String percent :percentArray){
-            percentModelsList.add( new PercentModel(percent));
+        for (String percent : percentArray) {
+            percentModelsList.add(new PercentModel(percent));
         }
     }
 }
