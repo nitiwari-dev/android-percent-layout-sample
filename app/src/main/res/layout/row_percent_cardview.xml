@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2018 Nitesh Tiwari.
   ~
   ~  Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,9 +14,21 @@
   ~  limitations under the License.
   -->
 
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
-</menu>
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <TextView
+        android:id="@+id/percent_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp" />
+</android.support.v7.widget.CardView>
