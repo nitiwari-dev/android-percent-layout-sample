@@ -5,7 +5,7 @@
 # Update
 Below example in created using `ConstraintLayout` since percent support library is deprecated from API level 26.0.0.
 
-# Integration and Samples
+# Integration and Example
 This sample uses `ConstraintLayout` to build xml UI. Helps to avoid the overhead of Nested layouts and thereby improving performance.
 
 Really awesome!!!
