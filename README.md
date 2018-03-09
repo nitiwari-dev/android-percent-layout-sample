@@ -1,7 +1,10 @@
+[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 # Update
 Below example in created using `ConstraintLayout` since percent support library is deprecated from API level 26.0.0.
 
-# android-percent-layout-sample
+# Integration and Samples
 This sample uses `ConstraintLayout` to build xml UI. Helps to avoid the overhead of Nested layouts and thereby improving performance.
 
 Really awesome!!!
