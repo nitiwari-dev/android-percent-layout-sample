@@ -19,8 +19,7 @@ Steps:
 
     ` compile 'com.android.support.constraint:constraint-layout:1.1.0-beta3'`
   
-2. We have to use `layout_constraintHeight_percent` and `layout_constraintWidth_percent` to specify the percentage raning from (0 - 1).
-  0 = 0% and 1 is 100%
+2. Add `layout_constraintHeight_percent` and `layout_constraintWidth_percent` to specify the percentage range.
 
 3. Finally add `layout_constraintWidth_default="percent"` and `layout_constraintHeight_default="percent"`. Thats it !!!.
 
