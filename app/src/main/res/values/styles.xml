@@ -21,17 +21,14 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="STYLE_PERCENT_TV">
-        <item name="android:height">0dp</item>
-        <item name="android:width">0dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">25sp</item>
+    <style name="Theme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="STYLE_CONSTRAINT_PERCENT_TV">
-        <item name="android:height">0dp</item>
-        <item name="android:width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">25sp</item>

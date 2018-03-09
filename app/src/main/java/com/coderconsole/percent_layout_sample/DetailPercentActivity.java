@@ -14,24 +14,25 @@
  *  limitations under the License.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package com.coderconsole.percent_layout_sample;
 
-buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
+import com.coderconsole.percent_layout_sample.R;
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
+
+public class DetailPercentActivity extends AppCompatActivity {
+
+    public static final String EXTRAS_RES_ID = "extras.resource.id";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        int resId = intent.getIntExtra(EXTRAS_RES_ID, 0);
+        setContentView(resId);
+
     }
 }

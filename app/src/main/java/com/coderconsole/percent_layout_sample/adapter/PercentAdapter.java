@@ -16,13 +16,14 @@
 
 package com.coderconsole.percent_layout_sample.adapter;
 
-import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.coderconsole.percent_layout_sample.DetailPercentActivity;
 import com.coderconsole.percent_layout_sample.R;
 import com.coderconsole.percent_layout_sample.holder.PercentHolder;
 import com.coderconsole.percent_layout_sample.model.PercentModel;
@@ -56,52 +57,42 @@ public class PercentAdapter extends RecyclerView.Adapter<PercentHolder> {
         holder.percentTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPercentDialog(position, percentModelList.get(position).percentType);
+                startDetailActivity(position);
             }
         });
     }
 
 
-    private void showPercentDialog(int position, String percentType) {
+    private void startDetailActivity(int position) {
 
+        int resID = 0;
         switch (position) {
-
-
             case 0:
-                createDialogByPosition(percentType, R.layout.row_constraint_percent_20_50);
+                resID = R.layout.row_constraint_percent_20_50;
                 break;
-
             case 1:
-                createDialogByPosition(percentType, R.layout.row_constraint_percent_50_50);
+                resID = R.layout.row_constraint_percent_50_50;
                 break;
-
             case 2:
-                createDialogByPosition(percentType, R.layout.row_constraint_percent_50_100);
+                resID = R.layout.row_constraint_percent_50_100;
                 break;
-
             case 3:
-                createDialogByPosition(percentType, R.layout.row_constraint_percent_tile1);
+                resID = R.layout.row_constraint_percent_tile1;
                 break;
-
             case 4:
-                createDialogByPosition(percentType, R.layout.row_constraint_percent_tile2);
+                resID = R.layout.row_constraint_percent_tile2;
                 break;
             case 5:
-                createDialogByPosition(percentType, R.layout.row_constraint_chainning_ratios);
+                resID = R.layout.row_constraint_chainning_ratios;
                 break;
         }
 
+        Intent intent = new Intent(context, DetailPercentActivity.class);
+        intent.putExtra(DetailPercentActivity.EXTRAS_RES_ID, resID);
+        context.startActivity(intent);
+
 
     }
-
-    private void createDialogByPosition(String percentType, int resID) {
-
-        final Dialog dialog = new Dialog(context);
-        dialog.setContentView(resID);
-        dialog.setTitle(percentType);
-        dialog.show();
-    }
-
 
     @Override
     public int getItemCount() {
