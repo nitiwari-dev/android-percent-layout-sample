@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:background="#ba310e"
+        app:layout_constraintBottom_toBottomOf="@id/centerIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/centerIv" />
+
+    <ImageView
+        android:id="@+id/centerIv"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@android:drawable/ic_lock_lock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:background="#00ffbb"
+        app:layout_constraintBottom_toBottomOf="@+id/leftTopTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:background="#0e56ba"
+        app:layout_constraintBottom_toBottomOf="@id/leftBottomTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/leftBottomTv" />
+
+    <TextView
+        android:id="@+id/leftTopTv"
+        style="@style/STYLE_CONSTRAINT_BACKGROUND_TV"
+        android:text="@string/top_left_text"
+        app:layout_constraintBottom_toTopOf="@id/centerIv"
+        app:layout_constraintEnd_toStartOf="@id/centerIv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rightTopTv"
+        style="@style/STYLE_CONSTRAINT_BACKGROUND_TV"
+        android:text="@string/top_right_text"
+        app:layout_constraintBottom_toTopOf="@id/centerIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/centerIv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leftBottomTv"
+        style="@style/STYLE_CONSTRAINT_BACKGROUND_TV"
+        android:text="@string/bottom_left_text"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/centerIv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/centerIv" />
+
+
+    <TextView
+        android:id="@+id/rightBottomTv"
+        style="@style/STYLE_CONSTRAINT_BACKGROUND_TV"
+        android:text="@string/bottom_right_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/centerIv"
+        app:layout_constraintTop_toBottomOf="@id/centerIv" />
+
+</android.support.constraint.ConstraintLayout>

@@ -29,4 +29,8 @@
     <string name="fifty_seventy_tv">50%-70%</string>
     <string name="chaining">Chainning</string>
     <string name="ratios">Ratios</string>
+    <string name="bottom_right_text">Bottom Right</string>
+    <string name="bottom_left_text">Bottom Left</string>
+    <string name="top_right_text">Top Right</string>
+    <string name="top_left_text">Top Left</string>
 </resources>

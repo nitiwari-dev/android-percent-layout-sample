@@ -14,21 +14,35 @@
   ~  limitations under the License.
   -->
 
-<android.support.v7.widget.CardView
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    app:cardCornerRadius="4dp">
+    <data>
 
-    <TextView
-        android:id="@+id/percent_tv"
+        <variable
+            name="model"
+            type="com.coderconsole.percent_layout_sample.model.PercentModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="15dp"
-        android:textSize="18sp" />
-</android.support.v7.widget.CardView>
+        android:layout_margin="@dimen/dp_5"
+        app:elevation="@dimen/dp_5">
+
+        <TextView
+
+            android:id="@+id/percent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:text="@{model.percentType}"
+            android:textSize="@dimen/sp_18" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</layout>

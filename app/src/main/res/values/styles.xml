@@ -14,7 +14,7 @@
   ~  limitations under the License.
   -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -34,5 +34,13 @@
         <item name="android:textSize">25sp</item>
         <item name="layout_constraintHeight_default">percent</item>
         <item name="layout_constraintWidth_default">percent</item>
+    </style>
+
+    <style name="STYLE_CONSTRAINT_BACKGROUND_TV">
+        <item name="android:layout_height">@dimen/zero_dp</item>
+        <item name="android:layout_width">@dimen/zero_dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">@dimen/sp_25</item>
     </style>
 </resources>

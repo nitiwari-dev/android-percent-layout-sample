@@ -14,25 +14,9 @@
  *  limitations under the License.
  */
 
-package com.coderconsole.percent_layout_sample;
+package com.coderconsole.percent_layout_sample.holder
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView
+import com.coderconsole.percent_layout_sample.databinding.RowPercentCardviewBinding
 
-import com.coderconsole.percent_layout_sample.R;
-
-
-public class DetailPercentActivity extends AppCompatActivity {
-
-    public static final String EXTRAS_RES_ID = "extras.resource.id";
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Intent intent = getIntent();
-        int resId = intent.getIntExtra(EXTRAS_RES_ID, 0);
-        setContentView(resId);
-
-    }
-}
+class PercentHolder(val itemViewBinding: RowPercentCardviewBinding) : RecyclerView.ViewHolder(itemViewBinding.root)

@@ -14,20 +14,23 @@
  *  limitations under the License.
  */
 
-package com.coderconsole.percent_layout_sample.holder;
+package com.coderconsole.percent_layout_sample
 
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.TextView;
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 
-import com.coderconsole.percent_layout_sample.R;
 
-public class PercentHolder extends RecyclerView.ViewHolder {
+class DetailPercentActivity : AppCompatActivity() {
 
-    public TextView percentTv;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val intent = intent
+        val resId = intent.getIntExtra(EXTRAS_RES_ID, 0)
+        setContentView(resId)
 
-    public PercentHolder(View itemView) {
-        super(itemView);
-        percentTv = itemView.findViewById(R.id.percent_tv);
+    }
+
+    companion object {
+        val EXTRAS_RES_ID = "extras.resource.id"
     }
 }
