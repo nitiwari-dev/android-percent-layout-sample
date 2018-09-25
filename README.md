@@ -13,6 +13,7 @@ Really awesome!!!
 ![size_1_1](https://user-images.githubusercontent.com/10304040/37208672-3542600c-23c8-11e8-92a1-32784c9e0348.png)
 ![size_1_2](https://user-images.githubusercontent.com/10304040/37208806-b48731c6-23c8-11e8-9f61-d41084ef6a28.png)
 ![size_1_3](https://user-images.githubusercontent.com/10304040/37208813-ba672eca-23c8-11e8-96fc-655980f68d8d.png)
+![background](https://user-images.githubusercontent.com/10304040/45996611-67a33780-c0ba-11e8-8205-eba7d06a794c.png)
 
 Steps:
 
